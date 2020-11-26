@@ -1,0 +1,22 @@
+1. env
+   $HOME
+   # bash: /home/student: Is a directory
+   
+
+2. echo $PATH
+   # /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:snap/bin
+
+   La variable d'environnement PATH est utilisée pour localiser les commandes dans l'arborescence des répertoires. En définissant la variable PATH, on crée un ensemble fixe de répertoires dans lesquels le système cherche systématiquement les fichiers à utiliser lorsque on entrez le nom d'une commande
+
+3. vim process.sh
+   chmod +x process.sh
+
+4. sudo mv process.sh /opt
+
+5. export PATH="/opt/:$PATH"
+
+6. le script ne se lance plus
+
+7. on rajoute la commande export PATH="/opt/:$PATH" dans le fichier .bashrc
+
+

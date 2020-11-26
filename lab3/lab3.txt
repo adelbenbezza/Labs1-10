@@ -1,0 +1,95 @@
+3. git clone https://github.com/khachicha/5AS05-partie3.git
+
+4. il ya 1 dossier et 3 fichier
+
+5. la taille du dossier sardar n'est pas correcte, car sous Linux les repertoire sont des fichiers ces derniers contiennent des information sur le contenu du repertoire.
+
+6. du Microsoft
+ls -l donne la taille exacte du fichier tandis que du donne la taille occupee par le fichier sur le disque dur (Multiple de 4096)
+
+7. stat Microsoft 
+
+L'inode correspond a un numèro qui est attribué a chaque fichier, qui est y stocké dans la table des inodes. l'inode contient  des info sur un fichier comme le type la taille..
+
+8. ls -a
+le fichier cache est .lightbulb
+
+9. ls -lrt
+
+10. ls -lrS
+
+11. cat answering-machine.txt
+
+12. less answering-machine.txt
+
+13. sudo apt install vim
+
+14. vim answering-machine.txt
+on appuie sur G pour aller a la fin du document puis i pour inserer du text 
+
+15. /gravelly => Enter => dw (pour supprimer le mot)
+
+16. ZZ pour sauvegarder et quitter
+
+17. /planet => n 
+
+19. ?BEEP => n 
+
+20. tail -20 sardar3.txt 
+
+21. grep 'trust' Microsoft 
+
+22. grep -r 'money' .
+
+23. grep -r 'Money' .
+
+24. mv .lightbulb lightbulb
+
+25. cd sardar/
+    pwd
+
+26. mv sardar3.txt ..
+
+27. cd ..
+
+28. rm Microsoft
+
+29. mkdir archive
+    cp -r ./* ./archive
+
+30. ln -s ./sardar/sardar1.txt ./sardar1-sym
+    ln -s ./sardar/sardar2.txt ./sardar2-sym
+
+31.les liens symboliques sont en bleu ciel
+
+32. rm ./sardar/sardar2.txt 
+le fichier symbolique devient rouge et ne peut pas etre ouvert
+
+33. nous n'avons pas les droit d'ecriture
+
+34. ls -l
+
+35. chmod +w sardar1.txt
+
+36. tar jcvf 5AS05-partie3.tar.bz2 ./5AS05-partie3/
+
+37. tar -jtvf 5AS05-partie3.tar.bz2
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

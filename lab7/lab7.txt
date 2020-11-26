@@ -1,0 +1,7 @@
+3.4. partie de preprocessing : gcc -E max.c testmax.c > programme.i
+     partie de compilation   : gcc -S programme.i
+     partie d'assemblage     : gcc -c programme.s
+
+5. dans la phase d'assemblage
+
+

@@ -1,0 +1,52 @@
+1. cp max.* min.* var.* -t ../lab9
+
+2. gcc -fPIC -c max.c min.c var.c
+
+3. gcc -shared *.o -o libmmv.so
+
+4. sudo mv libmmv.so /opt/lib/
+
+5. gcc main.c -L/opt/lib -lmmv 
+
+6. Erreur: les fonctions ne son pas reconnue
+
+7. echo $LD_LIBRARY_PATH
+   la variable est vide
+
+8. export LD_LIBRARY_PATH=/opt/lib
+
+9. le programme fonctionne mais si on relance le terminal cca ne marche plus
+
+10. on doit ajouter la commande export LD_LIBRARY_PATH="/opt/lib" dans le bashrc
+
+11. locate libm.so
+
+12. le nom reel : libm-2.27.so 
+    le soname   :libm.so.6
+
+13. sudo mv /opt/lib/libmmv.so /usr/lib
+    chmod 444 libmmv.so
+
+14. sudo ldconfig
+
+
+15. ldconfig -p | grep libmmv
+    on trouve bien notre bibliotheque : libmmv.so (libc6,x86-64) => /usr/lib/libmmv.so
+
+16. ldd executable
+    output : libmmv.so => /usr/lib/libmmv.so (0x00007fdbba6cc000)
+
+17. on supprime l'export dans le bashrc
+
+18. gcc main.c -lmmv
+
+
+
+    
+
+
+
+
+
+
+

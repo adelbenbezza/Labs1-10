@@ -1,0 +1,39 @@
+1. cp 
+
+2. gcc -c max.c min.c
+
+3. ar liboutils.a max.o min.o
+
+4. ar t liboutils.a
+
+5. ranlib liboutils.a
+   il sert a accelerer la compilation 
+
+6. vim main.c
+
+7. cd /opt 
+   sudo mkdir lib include
+
+8. sudo mv max.h min.h /opt/include
+   sudo mv liboutils.a /opt/lib
+
+9. gcc main.c -L/opt/lib -I/opt/include -loutils -o executable
+
+10. le programme fonctionne correctement
+
+11. sudo mv var.h /opt/include
+    sudo mv var.c /opt/lib
+    gcc -c var.c
+    ar r liboutils.a var.o
+
+12. ar t liboutils.a
+
+13. ranlib liboutils.a
+    nm liboutils.a
+
+14. gcc main.c -L/opt/lib -I/opt/include -loutils -o executable
+
+15.
+
+
+    
